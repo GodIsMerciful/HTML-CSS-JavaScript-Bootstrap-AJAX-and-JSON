@@ -16,41 +16,25 @@
 	<!-- Bootstrap css -->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<!-- Font-Awesome-Icons-CSS -->
 
 </head>
 
 <body>
-	<div class="navbar-inner">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				    aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto text-center mr-xl-5">
-						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="index.html">Home
-							</a>
-						</li>
-						
-						<li class="nav-item">
-							<a class="nav-link" href="checkout.html">Cart</a>
-                        </li>
-                        
-                        <li class="nav-item">
-							<a class="nav-link" href="zadatak.html">Zadatak</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+	<div class="row" id="header">
+        <div class="col-lg-8"><img src="img/logo.png" alt="Lambda national logo" class="position-absolute" height="100"/></div>
+        <div class="col-lg-4 edit">
+            <ul class="list-inline" id="list">
+                <!--<li class="list-inline-item"><a href="#">Pocetna</a></li>
+                <li class="list-inline-item"><a href="#">Shop</a></li>
+                <li class="list-inline-item"><a href="#">Kontakt</a></li>-->
+            </ul>
+        </div>
 	</div>
-	<div class="ads-grid py-sm-5 py-4">
-		<div class="container" id="content">
-			<table class="timetable_sub">
+	<div class="container-fluid" id="background">
+		<div class="ads-grid py-sm-5 py-4">
+		<div class="container container-korpa" id="content">
+			<!--<table class="timetable_sub">
 				<thead>
 					<tr>
 						<th>SL No.</th>
@@ -81,16 +65,17 @@
 						</td>
 					</tr>
 				</tbody>
-			</table>
+			</table>-->
+		</div>
 		</div>
 	</div>
-	<div class="copy-right py-3">
-		<div class="container">
-			<p class="text-center text-white">© 2018 Electro Store. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
-			</p>
-		</div>
-	</div>
+	
+
+
+	<div class="row" id="footer">
+        <p class="jedan d-flex justify-content-center">Vanja Veapi &copy; 2020</p>
+        <p class="dva d-flex justify-content-center">Copyright reserved</p>
+    </div>
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -99,7 +84,7 @@
 	<!-- //jquery -->
 	<!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
-	
+	<script src="js/main.js"></script>
 	<script src="js/cart.js"></script>
 </body>
 

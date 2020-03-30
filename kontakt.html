@@ -45,9 +45,10 @@
             <div class="d-flex justify-content-start pt-4 pb-4">
                 <div class="col-lg-12">
                     <h1 class="d-flex justify-content-center">Kontakt</h1>
-                    <form action="1.php">
-                        <label for="ime">Ime</label><p id="greskaIme"></p>
-                        <input type="text" id="ime" name="ime" placeholder="Vaše ime...">
+                    <form action="1.php" method="post" onsubmit="validate()">
+
+                        <label for="ime1">Ime</label><p id="greskaIme" style="color:red"></p>
+                        <input type="text" id="ime" name="ime" placeholder="Vaše ime..."/>
                     
                         <label for="prezime">Prezime</label><p id="greskaPrezime"></p>
                         <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime...">
@@ -62,7 +63,8 @@
                         <label for="poruka">Poruka (opciono)</label>
                         <textarea id="poruka" name="poruka" placeholder="Ako smo nešto izostavili ovde možete da napišete..." style="height:200px"></textarea>
                     
-                        <input type="submit" value="Pošalji" id="dugme" onclick="validate()">
+                        <input type="submit" value="Pošalji" id="dugme"/>
+                    </form>
                 </div>
             </div>
         </div>

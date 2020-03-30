@@ -16,11 +16,6 @@ function displayCartData() {
         success : function(data) {
             let productsForDisplay = [];
 
-            //izdvajanje objekata dohvacenih ajaxom tako da tu budu samo objekti koji su u 
-            //localstorage i dodavanje kolicine
-
-
-
 
             data = data.filter(p => {
                 for(let prod of products)
@@ -40,16 +35,17 @@ function displayCartData() {
 
 function generateTable(products) {
     let html = `
+            <h1 class="d-flex justify-content-center align-items-center naslov-korpa">Korpa</h1>
             <table class="timetable_sub">
 				<thead>
 					<tr>
-						<th>SL No.</th>
-						<th>Product</th>
-						<th>Product Name</th>
-                        <th>Base Price</th>
-                        <th>Quantity</th>
-						<th>Price</th>
-						<th>Remove</th>
+						<th>ID</th>
+						<th>Slika prozivoda</th>
+						<th>Ime proizvoda</th>
+                        <th>Cena po komadu</th>
+                        <th>Količina</th>
+						<th>Ukupna cena</th>
+						<th>Obriši</th>
 					</tr>
 				</thead>
 				<tbody>`;
@@ -68,7 +64,7 @@ function generateTable(products) {
         <td class="invert">${p.id}</td>
         <td class="invert-image">
             <a href="single.html">
-                <img src="img/${p.picture.src}" style='height:100px' alt="${p.picture.alt}" class="img-responsive">
+                <img src="img/products/${p.picture.src}" alt="${p.picture.alt}" class="img-responsive">
             </a>
         </td>
         <td class="invert">${p.name}</td>

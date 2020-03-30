@@ -130,7 +130,7 @@ function makeProduct(product) {
                     <p>Naziv: ${product.name}</p>
                     <p>Proizvođač: ${product.proizvodjac}</p>
                     <p>Cena: &euro;${product.cena}</p>
-                    <input type="button" value="Dodaj u korpu" class="mb-3 p-1 pr-3 pl-3 korpa" id="cart"/>
+                    <input type="button" value="Dodaj u korpu" class="mb-3 p-1 pr-3 pl-3 korpa" id="cart" data-id="${product.id}" onclick="uvecaj()"/>
         </div>
     `;
 }
@@ -241,7 +241,7 @@ function sortirajPoCeniRastuce()
     });
 }
 
-function sortirajPoCeniOpadajuce()
+function sortirajPoCeniOpadajuce(e)
 {
     $.ajax({
         url : "data/products.json",
@@ -274,4 +274,21 @@ function sortirajPoCeniOpadajuce()
 }
 
 //==================== [ KRAJ Sortiranja ] ===========================
+
+document.getElementById("lista").addEventListener("input", function(e)
+{
+    switch(e.target.value)
+    {
+        case "1":sortirajPoProizvodjacu();break;
+        case "2":sortirajPoCeniRastuce();break;
+        case "3":sortirajPoCeniOpadajuce();break;
+        default:
+            case "menu_order":sortirajPoDefaultu();break;
+    }
+});
+
+function uvecaj()
+{
+    document.getElementById("brojac").value++;
+}
 
