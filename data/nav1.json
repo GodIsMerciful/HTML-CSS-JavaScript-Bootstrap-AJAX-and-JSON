@@ -1,0 +1,14 @@
+[
+    {
+        "naslov": "Početna",
+        "href": "index.html"
+    },
+    {
+        "naslov":"Korpa",
+        "href":"checkout.html"
+    },
+    {
+        "naslov": "Kontakt",
+        "href": "kontakt.html"
+    }
+]

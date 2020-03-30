@@ -1,0 +1,90 @@
+[
+    {
+        "id":1,
+        "name":"AK 47 CM.028S",
+        "proizvodjac":"CYMA",
+        "cena" : 120,
+        "picture" :
+        {
+            "src":"ak47.jpg",
+            "alt":"Ak47 sa rasklopnim kundakom"
+        }
+    },
+    {
+        "id":2,
+        "name":"AK 47 CM.028",
+        "proizvodjac":"CYMA",
+        "cena" : 125,
+        "picture" :
+        {
+            "src":"ak47_2.jpg",
+            "alt":"Ak47 sa drvenim kundakom"
+        }
+    },
+    {
+        "id":3,
+        "name":"JG069 M5-J",
+        "proizvodjac":"J.G.Works",
+        "cena" : 220,
+        "picture" :
+        {
+            "src":"hekler.jpg",
+            "alt":"Hekler sa produznim kundakom"
+        }
+    },
+    {
+        "id":4,
+        "name":"Magnum 357",
+        "proizvodjac":"King",
+        "cena" : 60,
+        "picture" :
+        {
+            "src":"magnum357.jpg",
+            "alt":"Revolver magnum"
+        }
+    },
+    {
+        "id":5,
+        "name":"R2 Škorpion",
+        "proizvodjac":"Well",
+        "cena" : 90,
+        "picture" :
+        {
+            "src":"r2.well.jpg",
+            "alt":"skorpion"
+        }
+    },
+    {
+        "id":6,
+        "name":"USP-S",
+        "proizvodjac":"J.G.Works",
+        "cena" : 80,
+        "picture" :
+        {
+            "src":"USP-S.jpg",
+            "alt":"Pistolj sa dodatkom prigusivaca"
+        }
+    },
+    {
+        "id":7,
+        "name":"MAC-10",
+        "proizvodjac":"HFC",
+        "cena" : 240,
+        "picture" :
+        {
+            "src":"uzi(hfc).jpg",
+            "alt":"UZI"
+        }
+    },
+    {
+        "id":8,
+        "name":"M-16",
+        "proizvodjac":"CYMA",
+        "cena" : 350,
+        "picture" :
+        {
+            "src":"m16.jpg",
+            "alt":"M-16"
+        }
+    }
+]
