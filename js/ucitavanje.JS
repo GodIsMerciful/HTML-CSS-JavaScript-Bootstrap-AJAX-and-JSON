@@ -33,6 +33,7 @@ function makeNav(link)
 
 function validate(e)
 {
+    e.preventDefault();
     let validno = true;
 
     var ime = document.getElementById("ime").value;
@@ -40,11 +41,11 @@ function validate(e)
 
     var imeGreska = document.getElementById("greskaIme");
 
-    if(ime == "")
+    if(ime === "")
     {
         validno = false;
         imeGreska.innerHTML = "Polje ime je prazno.";
-        e.preventDefault();
+        
         //document.getElementById("ime").style.borderColor = "red";
     }
     else
