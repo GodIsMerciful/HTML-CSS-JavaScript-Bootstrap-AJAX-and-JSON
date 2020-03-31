@@ -45,18 +45,18 @@
             <div class="d-flex justify-content-start pt-4 pb-4">
                 <div class="col-lg-12">
                     <h1 class="d-flex justify-content-center">Kontakt</h1>
-                    <form action="1.php" method="post" onsubmit="validate()">
+                    <form method="post" onsubmit="validate()" id="forma">
 
-                        <label for="ime1">Ime</label><p id="greskaIme" style="color:red"></p>
+                        <label for="ime1">Ime</label><p class="boja" id="greskaIme"></p>
                         <input type="text" id="ime" name="ime" placeholder="Vaše ime..."/>
                     
-                        <label for="prezime">Prezime</label><p id="greskaPrezime"></p>
+                        <label for="prezime">Prezime</label><p class="boja" id="greskaPrezime"></p>
                         <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime...">
 
-                        <label for="mail">E-mail</label><p id="greskaEMail"></p>
+                        <label for="mail">E-mail</label><p class="boja" id="greskaEMail"></p>
                         <input type="text" id="mail" name="mail" placeholder="Vaš email...">
 
-                        <label for="brTel">Broj telefona</label><p id="greskaBrTel"></p>
+                        <label for="brTel">Broj telefona</label><p class="boja" id="greskaBrTel"></p>
                         <input type="text" id="brTel" name="brTel" placeholder="Vaš broj telefona...">
                     
                     

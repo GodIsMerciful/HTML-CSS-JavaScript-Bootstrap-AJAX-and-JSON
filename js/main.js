@@ -3,7 +3,7 @@ $(document).ready(function()
     $.ajax(
         {
                 url:"data/nav.json",
-                method:"post",
+                method:"get", // Ovde je bilo post
                 success:function(data)
                 {
                     loadNav(data);

@@ -30,10 +30,9 @@ function makeNav(link)
 
 //=============== [ REGULARNI IZRAZ ] =================================
 
-
+document.getElementById("forma").addEventListener('submit',validate);
 function validate(e)
 {
-    e.preventDefault();
     let validno = true;
 
     var ime = document.getElementById("ime").value;
@@ -44,8 +43,7 @@ function validate(e)
     {
         validno = false;
         imeGreska.innerHTML = "Polje ime je prazno.";
-        
-        //document.getElementById("ime").style.borderColor = "red";
+        document.getElementById("ime").style.borderColor = "red";
     }
     else
     {
@@ -53,13 +51,14 @@ function validate(e)
         {
             validno = false;
             imeGreska.innerHTML = "Datum rodjenja nije u dobrom formatu...";
-            //document.getElementById("ime").style.borderColor = "red";
+            document.getElementById("ime").style.borderColor = "red";
         }
         else
         {
             imeGreska.innerHTML = "";
         }
     }
+    e.preventDefault();
 }
 
 //=====================================================================

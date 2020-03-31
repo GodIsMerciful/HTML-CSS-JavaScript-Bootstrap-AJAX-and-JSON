@@ -152,6 +152,7 @@ td.invert-image a img {
 }
 #footer
 {
+    width: 100%;
     color: #fff;
     background-color: #000;
     padding: 20px;
@@ -225,6 +226,7 @@ input[type=text], textarea
   {
       padding: 40px 0;
   }
-
-
-  
+.boja
+{
+    color: #ff000f;
+}
