@@ -40,7 +40,6 @@ function validate(e)
     var regIzrazIme = /^[A-ZŠĐŽČĆ][a-zšđžčć]{2,12}$/;
 
     var imeGreska = document.getElementById("greskaIme");
-
     if(ime === "")
     {
         validno = false;
