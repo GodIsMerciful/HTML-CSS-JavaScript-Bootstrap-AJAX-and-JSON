@@ -3,7 +3,7 @@ $(document).ready(function()
     $.ajax(
         {
                 url:"data/nav1.json",
-                method:"post",
+                method:"get",
                 success:function(data)
                 {
                     loadNav(data);
