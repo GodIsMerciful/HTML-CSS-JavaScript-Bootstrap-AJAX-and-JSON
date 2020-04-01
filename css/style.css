@@ -67,6 +67,7 @@ li
     background-size: cover;
     height: auto;
     padding-bottom: 100px;
+    background-size: initial;
 }
 .container
 {
@@ -220,7 +221,10 @@ input[type=text], textarea
       font-family: Arial, Helvetica, sans-serif;
   }
 
-
+  #korpa
+  {
+    width: 7%;
+  }
 
   .naslov-korpa
   {
@@ -230,3 +234,234 @@ input[type=text], textarea
 {
     color: #ff000f;
 }
+
+.btn
+{
+    background-color: #003893c7;
+    border: none;
+    transition: 0.6s;
+}
+.btn:hover, .btn:focus
+{
+    background-color: #ff0011c4;
+    box-shadow: 0 0 5px  #ffffff;
+}
+#korpa
+{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 250px)
+{
+    #dugme
+    {
+        padding: 9px 20px;
+    }
+}
+
+@media (max-width: 1580px)
+{
+    #kontejner
+    {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1460px)
+{
+    #kontejner
+    {
+        max-width: 800px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 1285px)
+{
+    #kontejner
+    {
+        max-width: 650px;
+    }
+    .korpa
+    {
+        font-size: 7px;
+    }
+    #kontejner p
+    {
+        font-size: 13px;
+    }
+    #lista
+    {
+        font-size: 16px;
+    }
+    #korpa
+    {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1115px)
+{
+    #kontejner
+    {
+        max-width: 500px;
+    }
+    #background
+    {
+        background-size: cover;
+    }
+    .korpa
+    {
+        font-size: 8px;
+    }
+    .col-lg-2
+    {
+        max-width: initial;
+    }
+    .font-size
+    {
+        display: none;
+    }
+}
+@media (max-width: 1096px)
+{
+    #kontejner
+    {
+        max-width: 350px;
+    }
+}
+@media (max-width: 991px)
+{
+    #kontejner
+    {
+        max-width: 400px;
+        font-size: 20px;
+    }
+    .korpa
+    {
+        font-size: 14px;
+    }
+    #kontejner p
+    {
+        font-size: 20px;
+    }
+    #lista
+    {
+        font-size: 15px;
+    }
+    #korpa
+    {
+        width: 85%;
+    }
+    #title h1
+    {
+        font-size: 30px;
+    }
+    #title h2
+    {
+        font-size: 25px;
+    }
+    .timetable_sub
+    {
+        table-layout: fixed;
+    }
+    .timetable_sub th
+    {
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+}
+@media (max-width: 863px)
+{
+    #kontejner
+    {
+        max-width: 60%;
+    }
+}
+@media (max-width: 775px)
+{
+    #kontejner
+    {
+        max-width: 70%;
+        margin-right: 80px;
+        margin-left: 50px;
+    }
+    .timetable_sub th
+    {
+        font-size: 10px;
+    }
+    .timetable_sub td
+    {
+        font-size: 12px;
+    }
+    .rem
+    {
+        font-size: 10px;
+    }
+}
+@media (max-width: 600px)
+{
+    #background
+    {
+        padding-bottom: 130px;
+    }
+    #footer
+    {
+        padding-bottom: 35px;
+    }
+}
+@media (max-width: 600px)
+{
+    #kontejner
+    {
+        max-width: 100%;
+    }
+    .container
+    {
+        width: 70%;
+    }
+    #korpa
+    {
+        font-size: 25px;
+        width: 75%;
+    }
+}
+@media (max-width: 460px)
+{
+    #korpa
+    {
+        font-size: 17px;
+        margin-right: auto;
+    }
+    .container
+    {
+        width: 70%;
+    }
+}
+@media (max-width: 360px)
+{
+    #title h1
+    {
+        font-size: 20px;
+    }
+    #title h2
+    {
+        font-size: 18px;
+    }
+    #lista
+    {
+        font-size: 9px;
+    }
+    #korpa
+    {
+        font-size: 11px;
+    }
+}
+@media (max-width: 300px)
+{
+    .korpa
+    {
+        font-size: 10px;
+    }
+}
+
+
+
+

@@ -14,5 +14,9 @@
     {
         "naslov": "Kontakt",
         "href": "kontakt.html"
+    },
+    {
+        "naslov":"Autor",
+        "href":"autor.html"
     }
 ]

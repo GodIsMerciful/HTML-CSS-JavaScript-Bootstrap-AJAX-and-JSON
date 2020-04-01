@@ -18,20 +18,32 @@
 <body>
     <div class="row" id="header">
         <div class="col-lg-8"><img src="img/logo.png" alt="Lambda national logo" class="position-absolute" height="100"/></div>
-        <div class="col-lg-4 edit">
-            <ul class="list-inline" id="list">
+
+        <div class="col-lg-4 col-md-4 edit">
+            <div class="dropdown d-flex justify-content-end">
+                <button class="btn btn-secondary m-2 d-sm-block d-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars" style="font-size:40px;"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="index.html">Početna</a>
+                  <a class="dropdown-item" href="checkout.html">Korpa</a>
+                  <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                  <a class="dropdown-item" href="autor.html">Autor</a>
+                </div>
+            <ul class="list-inline d-sm-none" id="list">
                 <!--<li class="list-inline-item"><a href="#">Pocetna</a></li>
                 <li class="list-inline-item"><a href="#">Shop</a></li>
                 <li class="list-inline-item"><a href="#">Kontakt</a></li>-->
             </ul>
+            </div>
         </div>
+        
     </div>
 
 
     <div class="container-fluid" id="background">
 
-
-        <div class="container">
+        <div class="container" id="kontejner">
             <div class="row" id="title">
                 <div class="col-lg-12"><h1>Doborodošli u airsoft prodavnicu</h1></div>
                 <div class="col-lg-12"><h2>Ovde možete pronaći najkvalitenije replike</h2></div>
@@ -45,7 +57,7 @@
 			    </select>
             </div>
             <div class="d-flex justify-content-end">
-                <i class="fa fa-shopping-cart mt-4 p-2 d-flex justify-content-start" style="width: 7%;font-size: 30px;" id="korpa">:<input type="number" value="0" id="brojac" disabled></i>
+                <i class="fa fa-shopping-cart mt-4 p-2 d-flex justify-content-start" id="korpa">:<input type="number" value="0" id="brojac" disabled></i>
                 <button class="mt-4 p-2 d-flex" id="fourColumn"><i class="material-icons font-size" style="font-size:30px">view_comfy</i></button>
                 <button class="mt-4 p-2 d-flex" id="threeColumn"><i class="fa fa-th font-size"></i></button>
             </div>

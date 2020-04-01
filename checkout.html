@@ -1,34 +1,41 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="sr">
 <head>
-	<title>Document 2</title>
-	<!-- Meta tag Keywords -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords" content="Electro Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-	
-	<!-- //Meta tag Keywords -->
-
-	<!-- Custom-Files -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Bootstrap css -->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- Main css -->
-	<!-- Font-Awesome-Icons-CSS -->
-
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='Kupuj najkvalitenije! Airsoft prodavnica "Lambda" sa najbržom dostavom i najkvalitenijom opreom u regionu.'>
+    <meta name="keywords" content="Airsoft,prodavnica,lambda">
+    <meta name="author" content="Vanja Veapi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.ico" type="image/gif" sizes="64x64">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--END-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<div class="row" id="header">
         <div class="col-lg-8"><img src="img/logo.png" alt="Lambda national logo" class="position-absolute" height="100"/></div>
-        <div class="col-lg-4 edit">
-            <ul class="list-inline" id="list">
+        <div class="col-lg-4 col-md-4 edit">
+            <div class="dropdown d-flex justify-content-end">
+                <button class="btn btn-secondary m-2 d-sm-block d-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars" style="font-size:40px;"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="index.html">Početna</a>
+                  <a class="dropdown-item" href="checkout.html">Korpa</a>
+                  <a class="dropdown-item" href="kontakt.html">Kontakt</a>
+                  <a class="dropdown-item" href="autor.html">Autor</a>
+                </div>
+            <ul class="list-inline d-sm-none" id="list">
                 <!--<li class="list-inline-item"><a href="#">Pocetna</a></li>
                 <li class="list-inline-item"><a href="#">Shop</a></li>
                 <li class="list-inline-item"><a href="#">Kontakt</a></li>-->
             </ul>
+            </div>
         </div>
 	</div>
 	<div class="container-fluid" id="background">
@@ -81,9 +88,11 @@
 	<!-- js-files -->
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<!-- //jquery -->
 	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	
 	<script src="js/main.js"></script>
 	<script src="js/cart.js"></script>
 </body>
