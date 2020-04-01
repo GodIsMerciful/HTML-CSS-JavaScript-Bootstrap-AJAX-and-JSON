@@ -250,6 +250,30 @@ input[type=text], textarea
     font-size: 30px;
 }
 
+#opis-slika
+{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#opis-slika img
+{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+#opis-autor
+{
+    width: 40%;
+    text-align: justify;
+    margin: 10% auto;
+}
+#opis-autor p
+{
+    font-size: 24px;
+}
+
 @media screen and (max-width: 250px)
 {
     #dugme
@@ -283,7 +307,7 @@ input[type=text], textarea
     {
         font-size: 7px;
     }
-    #kontejner p
+    #shop-store p
     {
         font-size: 13px;
     }
@@ -318,8 +342,28 @@ input[type=text], textarea
     {
         display: none;
     }
-    button:disabled{}
 }
+
+
+
+
+@media (max-width: 1052px)
+{
+    #opis-slika img
+    {
+        width: 50%;
+        height: auto;
+    }
+    #opis-autor p
+    {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
 @media (max-width: 1096px)
 {
     #kontejner
@@ -423,6 +467,18 @@ input[type=text], textarea
         width: 75%;
     }
 }
+
+@media (max-width: 540px)
+{
+    #opis-autor p
+    {
+        font-size: 13px;
+        height: 30%;
+    }
+}
+
+
+
 @media (max-width: 460px)
 {
     #korpa

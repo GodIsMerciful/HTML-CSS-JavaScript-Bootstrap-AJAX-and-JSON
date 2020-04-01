@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <title>AIRSOFT PRODAVNICA | Kontakt </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content='Kupuj najkvalitenije! Airsoft prodavnica "Lambda" sa najbržom dostavom i najkvalitenijom opreom u regionu.'>
@@ -14,10 +13,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!--END-->
     <link rel="stylesheet" href="css/style.css">
+    <title>AIRSOFT PRODAVNICA | Autor </title>
 </head>
 <body>
     <div class="row" id="header">
-        <div class="col-lg-8 col-md-8 col-sm-6"><img src="img/logo.png" alt="Lambda national logo" class="position-absolute" height="100"/></div>
+        <div class="col-lg-8"><img src="img/logo.png" alt="Lambda national logo" class="position-absolute" height="100"/></div>
+
         <div class="col-lg-4 col-md-4 edit">
             <div class="dropdown d-flex justify-content-end">
                 <button class="btn btn-secondary m-2 d-sm-block d-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,6 +27,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="index.html">Početna</a>
                   <a class="dropdown-item" href="checkout.html">Korpa</a>
+                  <a class="dropdown-item" href="kontakt.html">Kontakt</a>
                   <a class="dropdown-item" href="autor.html">Autor</a>
                 </div>
             <ul class="list-inline d-sm-none" id="list">
@@ -33,38 +35,28 @@
                 <li class="list-inline-item"><a href="#">Shop</a></li>
                 <li class="list-inline-item"><a href="#">Kontakt</a></li>-->
             </ul>
+            </div>
         </div>
-        </div>
-
+        
+    </div>
 
     <div class="container-fluid" id="background">
 
-        <div class="row" id="title">
-        </div>
-        <div class="container" id="kontakt-forma">
-            <div class="d-flex justify-content-start pt-4 pb-4">
-                <div class="col-lg-12">
-                    <h1 class="d-flex justify-content-center">Kontakt</h1>
-                    <form method="post" onsubmit="validate()" id="forma">
-
-                        <label for="ime1">Ime</label><p class="boja" id="greskaIme"></p>
-                        <input type="text" id="ime" name="ime" placeholder="Vaše ime..."/>
-                    
-                        <label for="prezime">Prezime</label><p class="boja" id="greskaPrezime"></p>
-                        <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime...">
-
-                        <label for="mail">E-mail</label><p class="boja" id="greskaEMail"></p>
-                        <input type="text" id="mail" name="mail" placeholder="Vaš email...">
-                                        
-                        <label for="poruka">Poruka (opciono)</label>
-                        <textarea id="poruka" name="poruka" placeholder="Ako smo nešto izostavili ovde možete da napišete..." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Pošalji" id="dugme"/>
-                    </form>
-                </div>
+        <div class="container" id="kontejner">
+            <div class="row" id="title">
+                <div class="col-lg-12"><h1>O autoru</h1></div>
+            </div>
+            <div id="opis-slika">
+                <img src="img/o_autoru.jpg" alt="O autoru/Vanja Veapi" />
+            </div>
+            <div id="opis-autor" class="velicina">
+                <p>Moje ime je Vanja. Student sam druge godine na ICT-u smer IT. Imam 20 godina i planiram da se bavim front-endom. Pored programiranja imam dosta hobija, jedan od njih je i airsoft, pa sam odlučio da napravim i stranicu za prodaju replika.</p>
             </div>
         </div>
+
+
     </div>
+
 
     <div class="row" id="footer">
         <p class="jedan d-flex justify-content-center">Vanja Veapi &copy; 2020</p>
@@ -72,10 +64,8 @@
     </div>
 
 
-
      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
      <script src="js/ucitavanje.js"></script>
 </body>
-</html>
