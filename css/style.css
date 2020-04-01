@@ -273,7 +273,16 @@ input[type=text], textarea
 {
     font-size: 24px;
 }
-
+#link
+{
+    width: 100%;
+    text-align: center;
+}
+#link a
+{
+    font-size: 20px;
+    color: #007bff;
+}
 @media screen and (max-width: 250px)
 {
     #dugme
