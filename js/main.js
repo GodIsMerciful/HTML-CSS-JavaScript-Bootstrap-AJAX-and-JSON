@@ -167,7 +167,7 @@ function sortirajPoDefaultu()
     $(document).ready(function () {
         $.ajax({
             url : "data/products.json",
-            method : "post",
+            method : "GET",
             success : function(data) {
                 loadProducts(data);
             }
